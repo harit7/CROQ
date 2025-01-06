@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="">
+  <meta property="og:title" content="Monty Hall and Optimized Conformal Prediction to Improve Decision-Making with LLMs"/>
+  <meta property="og:description" content="arXiv '24"/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/single-round-example.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Large Language Models, Uncertainty Quantification, Conformal Prediction, Monty Hall">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>LLM CP-OPT and CROQ</title>
+  <link rel="icon" type="image/x-icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Monty Hall and Optimized Conformal Prediction to Improve Decision-Making with LLMs</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://harit7.github.io" target="_blank">Harit Vishwakarma</a> <sup style="font-size:10pt">*,w</sup>,</span>
+                <span class="author-block">
+                  <a href="https://amishler.github.io/personal_site/" target="_blank">Alan Mishler</a>,</span>
+                  <span class="author-block">
+                    <a href="https://thomascook1437.github.io/" target="_blank">Thomas Cook</a>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://www.niccolodalmasso.com/" target="_blank">Niccolò Dalmasso</a>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://dblp.org/pid/159/8691.html" target="_blank">Natraj Raman</a>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=B6t9KM8AAAAJ&hl=en" target="_blank">Sumitra Ganesh</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup style="font-size:10pt">w</sup> University of Wisconsin-Madison ; JPMorgan AI Research, NYC, NY.<br></b></span>
+
+                  </div>
+                  
+
+              <div class="column has-text-centered">
+                <div class="publication-links">      
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2501.00555" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+               </span>
+
+               <span class="link-block">
+                <a href="static/pdfs/LLM-CP-OPT-CROQ-Poster-2024.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Poster</span>
+              </a>
+             </span>
+               
+            </div>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><i style="color:#ef7103">NeurIPS '24 Workshop on Statistical Frontiers in LLMs and Foundation Models,</i><br></b></span>
+          </div>
+          
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><i style="color:#ef7103">NeurIPS '24 Workshop on Open-World Agents: Synnergizing Reasoning and Decision-Making in Open-World Environments.</i><br></b></span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+       
+        <div class="content has-text-justified">
+          
+            Keywords : Large Language Models, Uncertainty Quantification, Conformal Prediction, Monty Hall.
+          
+        </div>
+
+        <span style="font-size:10pt"> <sup style="font-size:10pt">*</sup> Work done while at JPMorgan AI Research.</span>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs) are empowering decision-making in several applications, including tool or API usage and answering multiple-choice questions (MCQs). However, they often make overconfident, incorrect predictions, which can be risky in high-stakes settings like healthcare and finance. To mitigate these risks, recent works have used conformal prediction (CP), a model-agnostic framework for distribution-free uncertainty quantification. CP transforms a \emph{score function} into prediction sets that contain the true answer with high probability. While CP provides this coverage guarantee for arbitrary scores, the score quality significantly impacts prediction set sizes. Prior works have relied on LLM logits or other heuristic scores, lacking quality guarantees. We address this limitation by introducing CP-OPT, an optimization framework to learn scores that minimize set sizes while maintaining coverage. Furthermore, inspired by the Monty Hall problem, we extend CP's utility beyond uncertainty quantification to improve accuracy. We propose \emph{conformal revision of questions} (CROQ) to revise the problem by narrowing down the available choices to those in the prediction set. The coverage guarantee of CP ensures that the correct choice is in the revised question prompt with high probability, while the smaller number of choices increases the LLM's chances of answering it correctly. Experiments on MMLU, ToolAlpaca, and TruthfulQA datasets with Gemma-2, Llama-3 and Phi-3 models show that CP-OPT significantly reduces set sizes while maintaining coverage, and CROQ improves accuracy over the standard inference, especially when paired with CP-OPT scores. Together, CP-OPT and CROQ offer a robust framework for improving both the safety and accuracy of LLM-driven decision-making. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        
+       <div class="item" style="text-align: center; vertical-align: middle; ">
+        <!-- Your image here -->
+        <img src="static/images/croq.jpeg" style="max-width: 80%; margin-top: 5%; margin-bottom: 5%;" alt="MY ALT TEXT"/>
+      
+        
+        <h2 class="subtitle has-text-centered">
+          Pipeline for Conformal Revision of Question (CROQ). 
+        </h2>
+      </div>
+
+      <div class="item" style="text-align: center;">
+        <!-- Your image here -->
+        <img src="static/images/croq_eg_r1.png" style="max-width: 70%;" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          CROQ Example: First Round of Inference.
+        </h2>
+      </div>
+
+      <div class="item" style="text-align: center;">
+        <!-- Your image here -->
+        <img src="static/images/croq_eg_r2.png" style="max-width: 80%;" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          CROQ Example: Second Round of Inference.
+        </h2>
+      </div>
+     
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+
+<!-- Paper poster -->
+ <!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+      </div>
+    </div>
+  </section>
+-->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code> 
+@article{ vishwakarma2024monty,
+      title={Monty Hall and Optimized Conformal Prediction to Improve Decision-Making with LLMs},
+      author={Vishwakarma, Harit and Mishler, Alan and Cook, Thomas and Dalmasso, Niccol{\`o} and Raman, Natraj and Ganesh, Sumitra},
+      journal={arXiv preprint arXiv:2501.00555},
+      year={2024}
+    }
+        </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+<p>
+ <b>Disclaimer:</b> This page was prepared for informational purposes in part by the Artificial Intelligence Research group of JPMorganChase and its affiliates (“J.P. Morgan”) and is not a product of the Research Department of JPMorganChase. J.P. Morgan makes no representation and warranty whatsoever and disclaims all liability, for the completeness, accuracy or reliability of the information
+contained herein. This document is not intended as investment research or investment advice, or a recommendation, offer or solicitation for the purchase or sale of any security, financial instrument, financial product or service, or to be used in any way for evaluating the merits of participating in any transaction, and shall not constitute a solicitation under any jurisdiction or to any
+person, if such solicitation under such jurisdiction or to such person would be unlawful.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
